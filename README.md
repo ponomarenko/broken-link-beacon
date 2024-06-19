@@ -7,7 +7,7 @@ python main.py --help
 **Output:**
 
 ```
-usage: link_extractor.py [-h] [-m MAX_URLS] url
+usage: main.py [-h] [-m MAX_URLS] url
 
 Link Extractor Tool with Python
 
@@ -23,7 +23,7 @@ optional arguments:
 For instance, to extract all links from 2 first URLs appeared in github.com:
 
 ```
-python link_extractor.py https://github.com -m 2
+python main.py https://github.com -m 2
 ```
 
 This will result in a large list, here is the last 5 links:
@@ -40,6 +40,12 @@ This will result in a large list, here is the last 5 links:
 ```
 
 This will also save these URLs in `github.com_external_links.txt` for external links and `github.com_internal_links.txt` for internal links.
+
+# To-Do List
+
+- [x] Code the essential functionalities
+- [ ] Make the analysis run quicker by using multiple threads
+- [ ] Containerize the application for simple deployment
 
 # Docker
 
