@@ -122,14 +122,14 @@ def crawl(url, parent="", max_urls=MAX_URLS_DEFAULT):
     for link in links:
         if total_urls_visited > max_urls:
             break
-        crawl(link, parent, max_urls=max_urls)
+        crawl(link, url, max_urls=max_urls)
 
 
 def show_stats():
     console = Console(record=True)
 
-    print("[+] Total Broken links:", len(broken_links))
-    print("[+] Total Crawled URLs:", max_urls)
+    print("[+] Total Crawled:", max_urls)
+    print("[+] Total Broken:", len(broken_links))
 
     # save the broken links to a file
     with open(

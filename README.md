@@ -43,21 +43,15 @@ This will also save these URLs in `github.com_external_links.txt` for external l
 
 # Docker
 
-Pull the repo with `docker pull wpscanteam/wpscan`
+Pull the repo with `docker pull org-name/container-name`
 
 Enumerating usernames
 
 ```shell
-docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u
+docker run -it --rm org-name/container-name --url https://target.tld/
 ```
 
-Enumerating a range of usernames
-
-```shell
-docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u1-100
-```
-
-\*\* replace u1-100 with a range of your choice.
+...
 
 What's next?
 Start your application by running → docker compose up --build
