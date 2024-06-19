@@ -1,0 +1,16 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.trimFinalNewlines": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "files.watcherExclude": {
+    "typings/**": true,
+    "venv/**": true
+  },
+  "files.exclude": {
+    "venv/": true
+  }
+}
